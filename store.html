@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="store.css">
+  <title>Store Order</title>
+</head>
+<body>
+  </style>
+</head>
+<body>
+    <form id='driver'>
+   <div class='dri2'> <input type='checkbox' id='1' name='driver'>Mohnsin <input type="text" name='1'></div>
+   <div class='dri'> <input type='checkbox' id='2' name='driver'>Mantu <input type="text" name='2'></div><br>
+   <div class='dri2'> <input type='checkbox' id='3' name='driver'>Tawar <input type="text" name='3'></div>
+   <div class='dri'> <input type='checkbox' id='4' name='driver'>Kapil <input type="text" name='4'></div><br>
+   <div class='dri2'> <input type='checkbox' id='5' name='driver'>Rakesh <input type="text" name='5'></div>
+   <div class='dri'> <input type='checkbox' id='6' name='driver'>Malik <input type="text" name='6'></div><br>
+   <div class='dri2'> <input type='checkbox' id='7' name='driver'>Hitesh <input type="text" name='7'></div>
+   <div class='dri'> <input type='checkbox' id='8' name='driver'>Sudhir <input type="text" name='8'></div><br>
+   <div class='dri2'> <input type='checkbox' id='9' name='driver'>Suraj <input type="text" name='9'></div>
+   <div class='dri'> <input type='checkbox' id='10' name='driver'>Deepak <input type="text" name='10'></div><br>
+   <div class='dri2'> <input type='checkbox' id='11' name='driver'>Sahil <input type="text" name='11'></div>
+   <div class='dri'> <input type='checkbox' id='12' name='driver'>Ajay <input type="text" name='12'></div><br>
+   <div class='dri2'> <input type='checkbox' id='13' name='driver'>Kamal <input type="text" name='13'></div>
+   <div class='dri'> <input type='checkbox' id='14' name='driver'>Bighania <input type="text" name='14'></div><br>
+   <input type="submit" value="Activate">
+  </form>
+
+<br>
+<form id="store">
+  Source-Loc: <input type="text" id="src">  <br> Destination: <input type="text" id="dest"><br>
+  <input type="checkbox" id="self">Self<br>
+  <input type="submit" name="Add Order">
+</form>
+<div id="added"></div>
+<hr>
+ <div class="hello"> 
+  <form id="deliver">
+  Order Id: <input type="text" id="id"><br>
+  <input type="radio" name="status" value="deli" checked>Delivered
+  <input type="radio" name="status" value="cancel">Cancel
+  <input type="radio" name="status" value="delete">Delete<br>
+  <input type="submit" value="Mark">
+  <div id="del"></div>
+</form>
+</div>
+<div class="hello">
+  <form id="assign">
+    Assign to: <select name="driver">
+    <option value="0">Select:</option>
+    <option value='Mohsin'>Mohnsin</option>
+    <option value='Mantu'>Mantu</option>
+    <option value='Tawar'>Tawar</option>
+    <option value='Kapil'>Kapil</option>
+    <option value='Rakesh'>Rakesh</option>
+    <option value='Malik'>Malik</option>
+    <option value='Hitesh'>Hitesh</option>
+    <option value='Sudhir'>Sudhir</option>
+    <option value='Suraj'>Suraj</option>
+    <option value='Deepak'>Deepak</option>
+    <option value='Sahil'>Sahil</option>
+    <option value='Ajay'>Ajay</option>
+    <option value='Kamal'>Kamal</option>
+    <option value='Bighania'>Bighania</option>
+    </select><br>
+    <input type="submit" value="Assign">
+  </form>
+  <div id="ass"></div>
+</div>
+
+<div id="hue">
+<hr>
+<div class="hello">
+	<form>
+	  Get orders:
+	  <select name="get" onchange="getOrder(this.value)">
+	    <option value="0">Select:</option>
+	    <option value="1">Show Undelivered</option>
+	    <option value="2">Show All</option>
+	  </select>
+	</form>
+</div>
+<div class="hello">
+<button id="suggest">Show/Suggest</button>
+</div><br>
+</div>
+<hr>
+<div id="data"></div>
+<br><br>
+<div id="data2"></div>
+
+<!-- Add update suggestion block -->
+
+<script type="text/javascript" src="storeFunc.js"></script>
+
+</body>
+</html>
