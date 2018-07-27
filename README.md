@@ -3,6 +3,7 @@ A web portal for employees of Just Delivery which helps them to keep a track of 
 Just Delivery is a small delivery start up. They have hired 14 drivers and offer food ordering and delivery services.
 
 This project uses php and MySQL. To calculate driving ditance between any two points, it uses Google Distance Matrix.
+It also use AJAX for updation of data without refreshing and JSON for data exchange.
 
 1. Check the active drivers and feed in their current locations. Default current location is Just Delivery Office.
 (You'll have to manually feed the current location each time as we are not using any API to get current location yet.)
